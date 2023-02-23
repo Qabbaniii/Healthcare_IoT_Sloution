@@ -1,0 +1,681 @@
+[
+    {
+        "id": "f37cfd5204b97ed5",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "65e72e8f4de7434a",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.mqttdashboard.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "f50999fef00117b8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4B7930",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#4b7930",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#306c78",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Healthcare for \"Athletes\"",
+            "hideToolbar": "false",
+            "allowSwipe": "menu",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 40,
+                "sy": 47,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "a9fc3f4c9610b5f9",
+        "type": "ui_group",
+        "name": "Room \" Temperature \"",
+        "tab": "b39ece449f674c2d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7cb086790aa19e0f",
+        "type": "ui_group",
+        "name": "Room \" Humidity \"",
+        "tab": "b39ece449f674c2d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "57089bcc001fb0d4",
+        "type": "ui_group",
+        "name": "Player \" Heart beat \"",
+        "tab": "b39ece449f674c2d",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1cded2bba8c03e06",
+        "type": "ui_group",
+        "name": "Player \" Oxygen in the blood \"",
+        "tab": "b39ece449f674c2d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9f314cd13e0500a9",
+        "type": "ui_group",
+        "name": "Player \" Human Temperature \"",
+        "tab": "b39ece449f674c2d",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b39ece449f674c2d",
+        "type": "ui_tab",
+        "name": "Healthcare for \"Athletes\"",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ccecec89f5a82f03",
+        "type": "remote-config",
+        "name": "Healthcare",
+        "host": "localhost",
+        "protocol": "http",
+        "port": "1880",
+        "baseurl": "/",
+        "instancehash": "my5zvdbywzssg0j3l1uuome8z4dlcdbkxe953i885qgoe75i9htapte1tmfple3h",
+        "server": "nodered04.remote-red.com",
+        "region": "de"
+    },
+    {
+        "id": "9ebacb80e326cc43",
+        "type": "mqtt in",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "topic": "NTI/EslamH/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "65e72e8f4de7434a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 300,
+        "wires": [
+            [
+                "259f5f36720be142",
+                "3ac1415355669919"
+            ]
+        ]
+    },
+    {
+        "id": "259f5f36720be142",
+        "type": "ui_gauge",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "7cb086790aa19e0f",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": " %",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#2a5eb2",
+            "#139a23",
+            "#c80e0e"
+        ],
+        "seg1": "30",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 410,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "3ac1415355669919",
+        "type": "ui_chart",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "7cb086790aa19e0f",
+        "order": 1,
+        "width": "6",
+        "height": "7",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 410,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ecf02b6c7f2956a0",
+        "type": "mqtt in",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "topic": "NTI/EslamT/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "65e72e8f4de7434a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 170,
+        "y": 220,
+        "wires": [
+            [
+                "974ca256e4d2e3fe",
+                "cbf5311092885751"
+            ]
+        ]
+    },
+    {
+        "id": "974ca256e4d2e3fe",
+        "type": "ui_gauge",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "a9fc3f4c9610b5f9",
+        "order": 0,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "60",
+        "colors": [
+            "#2a5eb2",
+            "#139a23",
+            "#c80e0e"
+        ],
+        "seg1": "17",
+        "seg2": "24",
+        "diff": false,
+        "className": "",
+        "x": 410,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "cbf5311092885751",
+        "type": "ui_chart",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "a9fc3f4c9610b5f9",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "-20",
+        "ymax": "60",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 410,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "516eb803e6ca9573",
+        "type": "ui_gauge",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "57089bcc001fb0d4",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "Beats/M",
+        "format": "{{value}}",
+        "min": "30",
+        "max": "220",
+        "colors": [
+            "#2dbe36",
+            "#e17e2d",
+            "#c80e0e"
+        ],
+        "seg1": "60",
+        "seg2": "100",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "52557b0c5d11c0f2",
+        "type": "ui_chart",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "57089bcc001fb0d4",
+        "order": 1,
+        "width": "6",
+        "height": "7",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "30",
+        "ymax": "220",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dfb58217ae15f76d",
+        "type": "ui_gauge",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "1cded2bba8c03e06",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "gtype": "wave",
+        "title": "gauge",
+        "label": " %",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "120",
+        "colors": [
+            "#2a5eb2",
+            "#139a23",
+            "#c80e0e"
+        ],
+        "seg1": "-10",
+        "seg2": "50",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "090b0f5c3be828e7",
+        "type": "ui_chart",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "1cded2bba8c03e06",
+        "order": 1,
+        "width": "6",
+        "height": "7",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "60",
+        "ymax": "120",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "596891d59c751637",
+        "type": "ui_gauge",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "9f314cd13e0500a9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "C",
+        "format": "{{value}}",
+        "min": "32",
+        "max": "42",
+        "colors": [
+            "#2a5eb2",
+            "#139a23",
+            "#c80e0e"
+        ],
+        "seg1": "36.1",
+        "seg2": "37.2",
+        "diff": false,
+        "className": "",
+        "x": 850,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6f1fe8456fa47ca7",
+        "type": "ui_chart",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "group": "9f314cd13e0500a9",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "cubic",
+        "nodata": "",
+        "dot": true,
+        "ymin": "30",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 850,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43d61e7032911c47",
+        "type": "mqtt in",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "topic": "NTI/Ahmed/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "65e72e8f4de7434a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 610,
+        "y": 200,
+        "wires": [
+            [
+                "516eb803e6ca9573",
+                "52557b0c5d11c0f2"
+            ]
+        ]
+    },
+    {
+        "id": "94db9d552a5a2ecc",
+        "type": "mqtt in",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "topic": "NTI/abdul/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "65e72e8f4de7434a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 600,
+        "y": 280,
+        "wires": [
+            [
+                "dfb58217ae15f76d",
+                "090b0f5c3be828e7"
+            ]
+        ]
+    },
+    {
+        "id": "fac1f5882694ec90",
+        "type": "mqtt in",
+        "z": "f37cfd5204b97ed5",
+        "name": "",
+        "topic": "NTI/Nada/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "65e72e8f4de7434a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "596891d59c751637",
+                "6f1fe8456fa47ca7"
+            ]
+        ]
+    }
+]
